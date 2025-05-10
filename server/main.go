@@ -3,8 +3,8 @@ package main
 // first task is tto do jwt authentication
 
 import (
-	"Chat-application/database"
-	"Chat-application/routes"
+	"Chat-Application/database"
+	"Chat-Application/routes"
 	"fmt"
 
 	"github.com/gofiber/fiber/v2"
@@ -17,7 +17,7 @@ func main() {
 		panic("their is some error in connecting the database")
 	}
 	//connected the database
-	fmt.Println("the connetion was successfull")
+	fmt.Println("the connetion with Database was successfull")
 
 	app := fiber.New()
 	// why cors-cross origin resourse sharing ---- API communication ,Blocks requests from different origins (domain, protocol, or port)
